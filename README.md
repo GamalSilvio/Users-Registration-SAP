@@ -1,1 +1,1 @@
-This the unsecure app, you can Inject SQL, XSS DOM and steal sensitive data
+This the app, protected against SQL Injection, XSS DOM and from the stealing of sensitive data
