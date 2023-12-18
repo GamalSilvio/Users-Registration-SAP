@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +5,7 @@
 </head>
 <body>
     <h1>Sign up</h1>
-    <form action="signup.php" method="post">
+    <form action="signup_unsafe.php" method="post">
         <input type="text" name="username" placeholder="User" required><br>
         <input type="password" name="password" placeholder="Password" required><br>
         <input type="submit" value="Sign up">
@@ -17,9 +16,8 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        $db = new SQLite3('users.db');
+        $db = new SQLite3('users_unsafe.db');
 
-        // Vulnerable code: SQL injection
         $query = "INSERT INTO users (username, password) VALUES ('$username', '$password')";
         $result = $db->query($query);
 
