@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +5,7 @@
 </head>
 <body>
     <h1>Welcome</h1>
-    <a href="signup.php">Sign up</a>
-    <a href="login.php">Login</a>
+    <a href="signup_unsafe.php">Sign up</a>
+    <a href="login_unsafe.php">Login</a>
 </body>
 </html>
